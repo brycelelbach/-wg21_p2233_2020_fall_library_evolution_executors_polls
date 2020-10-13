@@ -1,0 +1,164 @@
+<pre class='metadata'>
+Title: 2020 Fall Library Evolution Executors Polls
+Shortname: P2233
+Revision: 0
+Status: D
+Group: WG21
+Audience: WG21
+Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
+URL: https://wg21.link/P2233R0
+!Source: <a href="https://github.com/brycelelbach/wg21_p2233_2020_fall_library_evolution_executors_polls/blob/main/2020_fall_library_evolution_executors_polls.bs">GitHub</a>
+Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2233_2020_fall_library_evolution_executors_polls/issues
+Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
+Markup Shorthands: markdown yes
+Toggle Diffs: no
+No Abstract: yes
+Boilerplate: style-syntax-highlighting off
+</pre>
+
+<style>
+pre {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.ins, ins, ins *, span.ins, span.ins * {
+  background-color: rgb(200, 250, 200);
+  color: rgb(0, 136, 0);
+  text-decoration: none;
+}
+.del, del, del *, span.del, span.del * {
+  background-color: rgb(250, 200, 200);
+  color: rgb(255, 0, 0);
+  text-decoration: line-through;
+  text-decoration-color: rgb(255, 0, 0);
+}
+math, span.math {
+  font-family: serif;
+  font-style: italic;
+}
+ul {
+  list-style-type: "— ";
+}
+blockquote {
+  counter-reset: paragraph;
+}
+div.numbered, div.newnumbered {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.numbered:before, div.newnumbered:before {
+  position: absolute;
+  margin-left: -2em;
+  display-style: block;
+}
+div.numbered:before {
+  content: counter(paragraph);
+  counter-increment: paragraph;
+}
+div.newnumbered:before {
+  content: "�";
+}
+div.numbered ul, div.newnumbered ul {
+  counter-reset: list_item;
+}
+div.numbered li, div.newnumbered li {
+  margin-left: 3em;
+}
+div.numbered li:before, div.newnumbered li:before {
+  position: absolute;
+  margin-left: -4.8em;
+  display-style: block;
+}
+div.numbered li:before {
+  content: "(" counter(paragraph) "." counter(list_item) ")";
+  counter-increment: list_item;
+}
+div.newnumbered li:before {
+  content: "(�." counter(list_item) ")";
+  counter-increment: list_item;
+}
+</style>
+
+## Introduction ## {#introduction}
+
+The following C++ Library Evolution polls relate to executors ([[P0443R13]]),
+  a proposed set of abstractions for asynchronously creating and managing
+  execution agents.
+These polls are based on the reports of the six breakout groups that reviewed
+  various aspects of the executors proposal in the Summer of 2020
+  ([[P2202R0]], [[P2203R0]], [[P2183R0]], [[P2205R0]], [[P2206R0]], and [[P2207R0]]).
+We intend to take them in Fall of 2020.
+
+## Voting ## {#voting}
+
+These polls will be conducted electronically ([[P2195R0]]).
+Details on how to participate in these polls will be distributed on the mailing
+  list.
+All committee members may vote, but if you have not participated in the Library
+  Evolution discussions of executors, please choose to not vote.
+
+The tentative timeline for these votes is as follows:
+
+- 2020-10-13: Draft polls distributed by mailing list.
+- 2020-10-22 or 2020-10-23: Final discussion telecon on these polls.
+    Start of the polling period.
+- 2020-11-19: Close of the polling period.
+- 2020-11-20: Chairs share results and summarize consensus and conclusions of
+    the results.
+
+## Polls ## {#poll}
+
+Each poll consists of a statement; you vote on whether you support the
+  statement.
+All polls will be 5-way polls; you'll vote either strongly for, weakly for,
+  neutral, weakly against, or strongly against.
+
+### Poll 0 ### {#poll-0}
+
+`execute` should only accept `executor`s, `schedule` should only
+  accept `scheduler`s, and there is an explicit mechanism for adapting between
+  `executor`s and `scheduler`s (`execute(as_executor(my_scheduler), ...)`,
+  `schedule(as_scheduler(my_executor))`, etc).
+
+### Poll 1 ### {#poll-1}
+
+`schedule` should be a customizable algorithm with a default implementation in
+  terms of `execute`.
+
+### Poll 2 ### {#poll-2}
+
+`execute` should be a customizable algorithm with a default implementation in
+  terms of `schedule`.
+
+### Poll 3 ### {#poll-3}
+
+Use one class for each individual trait instead of combined traits classes
+  (`sender_traits`, etc).
+
+### Poll 4 ### {#poll-4}
+
+Remove `static_thread_pool` from P0443 (it may be pursued in a follow-on
+  proposal).
+
+### Poll 5 ### {#poll-5}
+
+Remove `any_executor` from P0443 (it may be pursued in a follow-on
+  proposal).
+
+### Poll 6 ### {#poll-6}
+
+Remove `any_executor::target` and `any_executor::target_type`.
+
+### Poll 7 ### {#poll-7}
+
+Implement CPOs in terms of `tag_invoke` ([[P2221R0]]).
+
+### Poll 8 ### {#poll-8}
+
+Executors should ship in a Technical Specification instead of C++23.
+
+### Poll 9 ### {#poll-9}
+
+Executors are sufficiently mature that we should aim to ship them in C++23.
+
