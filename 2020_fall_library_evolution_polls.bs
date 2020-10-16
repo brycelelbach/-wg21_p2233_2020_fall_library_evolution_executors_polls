@@ -121,67 +121,64 @@ These polls are based on the reports of the six breakout groups that reviewed
 
 #### Poll 0 #### {#poll-0}
 
-A single concept should replace the current `executor` and `scheduler` concepts.
+Remove explicit adaptation (apply [[P2235R0]] to [[P0443R14]]):
+- Make `schedule` only take `scheduler`s.
+- Make `execute` only take `executor`s.
+- Make sender and receiver operations like `connect` only take senders and
+    receivers.
+- Add explicit adaptation from `executor` to `scheduler`
+    (`make_scheduler_from_executor`) but not vice versa.
 
 #### Poll 1 #### {#poll-1}
-
-`execute` should only accept `executor`s, `schedule` should only
-  accept `scheduler`s, and there is an explicit mechanism for adapting between
-  `executor`s and `scheduler`s (`execute(as_executor(my_scheduler), ...)`,
-  `schedule(as_scheduler(my_executor))`, etc).
-
-#### Poll 3 #### {#poll-2}
-
-`schedule` should be a customizable algorithm with a default implementation in
-  terms of `execute`.
-
-#### Poll 3 #### {#poll-3}
-
-`execute` should be a customizable algorithm with a default implementation in
-  terms of `schedule`.
-
-#### Poll 4 #### {#poll-4}
 
 Use one class for each individual trait instead of combined traits classes
   (`sender_traits`, etc).
 
+#### Poll 2 #### {#poll-2}
+
+Remove `static_thread_pool` from [[P0443R14]] (it may be pursued in a follow-on
+  proposal).
+
+#### Poll 3 #### {#poll-3}
+
+Remove `any_executor` from [[P0443R14]] (it may be pursued in a follow-on
+  proposal).
+
+#### Poll 4 #### {#poll-4}
+
+Remove `any_executor::target` and `any_executor::target_type` from [[P0443R14]].
+
 #### Poll 5 #### {#poll-5}
 
-Remove `static_thread_pool` from P0443 (it may be pursued in a follow-on
-  proposal).
+Implement CPOs in terms of `tag_invoke` (apply [[P2221R0]] to [[P0443R14]]).
 
 #### Poll 6 #### {#poll-6}
-
-Remove `any_executor` from P0443 (it may be pursued in a follow-on
-  proposal).
-
-#### Poll 7 #### {#poll-7}
-
-Remove `any_executor::target` and `any_executor::target_type`.
-
-#### Poll 8 #### {#poll-8}
-
-Implement CPOs in terms of `tag_invoke` ([[P2221R0]]).
-
-#### Poll 9 #### {#poll-9}
-
-Executors should ship in a Technical Specification instead of C++23.
-
-#### Poll 10 #### {#poll-10}
 
 Executors are sufficiently mature that we should aim to ship them in C++23.
 
 ### Other Polls ### {#other-polls}
 
-#### Poll 11 #### {#poll-11}
+#### Poll 7 #### {#poll-7}
 
 Send [[P2212R1]] (Relax Requirements for `time_point::clock`) to LWG for C++23,
   classified as a bug fix/enhancement of an existing feature ([[P0592R4]] bucket
   2 item).
 
-#### Poll 12 #### {#poll-12}
+#### Poll 8 #### {#poll-8}
 
 Send [[P2166R1]] (Prohibit `basic_string` and `basic_string_view` Construction
   from `nullptr`) to LWG for C++23, classified as a bug fix/enhancement of an
   existing feature ([[P0592R4]] bucket 2 item).
 
+<pre class=biblio>
+{
+  "P2235R0": {
+    "authors": [
+      "Ville Voutilainen"
+    ],
+    "href": "https://isocpp.org/files/papers/P2235R0.html",
+    "title": "Disentangling Schedulers and Executors",
+    "date": "2020-10-15"
+  }
+}
+</pre>
