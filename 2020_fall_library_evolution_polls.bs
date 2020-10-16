@@ -150,27 +150,23 @@ Remove `any_executor::target` and `any_executor::target_type` from [[P0443R14]].
 
 #### Poll 5 #### {#poll-5}
 
-Implement CPOs in terms of `tag_invoke` (apply [[P2221R0]] to [[P0443R14]]).
-
-#### Poll 6 #### {#poll-6}
-
 Executors are sufficiently mature that we should aim to ship them in C++23.
 
 ### Other Polls ### {#other-polls}
 
-#### Poll 7 #### {#poll-7}
+#### Poll 6 #### {#poll-6}
 
 Send [[P2212R1]] (Relax Requirements for `time_point::clock`) to LWG for C++23,
   classified as a bug fix/enhancement of an existing feature ([[P0592R4]] bucket
   2 item).
 
-#### Poll 8 #### {#poll-8}
+#### Poll 7 #### {#poll-7}
 
 Send [[P2166R1]] (Prohibit `basic_string` and `basic_string_view` Construction
   from `nullptr`) to LWG for C++23, classified as a bug fix/enhancement of an
   existing feature ([[P0592R4]] bucket 2 item).
 
-#### Poll 9 #### {#poll-9}
+#### Poll 8 #### {#poll-8}
 
 Send [[P2161R0]] (Remove Default Candidate Executor) to LWG for the Networking
   TS Working Draft, classified as a focus work item ([[P0592R4 bucket 1 item).
