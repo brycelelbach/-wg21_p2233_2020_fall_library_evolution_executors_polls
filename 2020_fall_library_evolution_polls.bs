@@ -2,7 +2,7 @@
 Title: 2020 Fall Library Evolution Polls
 Shortname: P2233
 Revision: 0
-Status: D
+Status: P
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
