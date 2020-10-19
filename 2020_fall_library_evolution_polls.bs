@@ -169,7 +169,7 @@ Send [[P2166R1]] (Prohibit `basic_string` and `basic_string_view` Construction
 #### Poll 8 #### {#poll-8}
 
 Send [[P2161R0]] (Remove Default Candidate Executor) to LWG for the Networking
-  TS Working Draft, classified as a focus work item ([[P0592R4 bucket 1 item).
+  TS Working Draft, classified as a focus work item ([[P0592R4]] bucket 1 item).
 
 <pre class=biblio>
 {
