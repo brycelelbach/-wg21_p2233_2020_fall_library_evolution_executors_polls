@@ -14,7 +14,6 @@ Markup Shorthands: markdown yes
 Toggle Diffs: no
 No Abstract: yes
 Boilerplate: style-syntax-highlighting off
-Default Biblio Display: inline
 </pre>
 
 <style>
