@@ -1,8 +1,8 @@
 <pre class='metadata'>
 Title: 2020 Fall Library Evolution Polls
-Shortname: D2233
+Shortname: P2233
 Revision: 1
-Status: D
+Status: P
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
@@ -97,12 +97,16 @@ All committee members may vote, but if you have not participated in the Library
 
 <b><a href="https://documents.isocpp.org/index.php/apps/forms/p9rmfTQTEPpopQtb">Vote here</a></b>
 
-You need a documents.isocpp.org account to vote.
+A documents.isocpp.org account is necessary to vote.
+If you have an isocpp.org/papers account, a documents.isocpp.org account has
+  been created for you.
+Just go to documents.isocpp.org and reset your password.
+Email <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a> if you
+  do not have an account or are having trouble accessing your account.
+
 If you see "Form not found" when you go to the above link, you are not signed
   in to documents.isocpp.org.
-A documents.isocpp.org accocunt is necessary to vote.
-Email <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a> if you
-  do not have an account.
+Go to documents.isocpp.org and sign in first.
 
 You will not receive a confirmation email after voting.
 The Library Evolution chairs will send a confirmation to all voters before the
@@ -133,13 +137,14 @@ If you do not want to participate in a poll, select the "I do not want to
 Those who do not participate in a poll will not be counted or recorded.
 
 Each poll has a comment field.
-Please leave a comment explaining the rationale for your vote.
+Please write a few sentences explaining the rationale for your vote.
 
 Poll results and comments will be shared with Library Evolution after the end of
   the polling period, including attribution of your votes and comments.
 
-If you want to discuss the polls or how you plan on voting on them, please
-  starting an email thread on lib-ext@lists.isocpp.org
+If you want to discuss the polls or how you plan on voting, please start an
+  email thread on the
+  <a href="lib-ext@lists.isocpp.org">Library Evolution mailing list</a>.
 
 ### Executor Polls ### {#executor-polls}
 
@@ -152,8 +157,8 @@ These polls are based on the reports of the six breakout groups that reviewed
 
 #### Poll 0 #### {#poll-0}
 
-Remove explicit adaptation from P0443R14 (Executors) by applying [[P2235R0]] to
-  [[P0443R14]]) which will:
+Remove explicit adaptation from [[P0443R14]] (Executors) by applying
+  [[P2235R0]] to [[P0443R14]]) which will:
 - Make `schedule` only take `scheduler`s.
 - Make `execute` only take `executor`s.
 - Make sender and receiver operations like `connect` only take senders and
@@ -191,13 +196,13 @@ Remove `any_executor::target` and `any_executor::target_type` from [[P0443R14]]
 #### Poll 6 #### {#poll-6}
 
 Send [[P2212R1]] (Relax Requirements for `time_point::clock`) to LWG for C++23,
-  classified as a bug fix/enhancement of an existing feature ([[P0592R4]] bucket
+  classified as an improvement of an existing feature ([[P0592R4]] bucket
   2 item).
 
 #### Poll 7 #### {#poll-7}
 
 Send [[P2166R1]] (Prohibit `basic_string` and `basic_string_view` Construction
-  from `nullptr`) to LWG for C++23, classified as a bug fix/enhancement of an
+  from `nullptr`) to LWG for C++23, classified as an improvement of an
   existing feature ([[P0592R4]] bucket 2 item).
 
 #### Poll 8 #### {#poll-8}
