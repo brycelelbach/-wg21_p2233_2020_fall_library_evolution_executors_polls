@@ -1,12 +1,12 @@
 <pre class='metadata'>
 Title: 2020 Fall Library Evolution Polls
-Shortname: P2233
-Revision: 1
-Status: P
+Shortname: D2233
+Revision: 2
+Status: D
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
-URL: https://wg21.link/P2233R1
+URL: https://wg21.link/P2233R2
 !Source: <a href="https://github.com/brycelelbach/wg21_p2233_2020_fall_library_evolution_polls/blob/main/2020_fall_library_evolution_polls.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2233_2020_fall_library_evolution_polls/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
