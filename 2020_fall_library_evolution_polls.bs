@@ -88,18 +88,37 @@ This paper contains the decision polls that the C++ Library Evolution group
 ## Voting ## {#voting}
 
 These decision polls will be conducted electronically; see [[P2195R0]] for
-  more information..
-Details on how to participate in these polls will be distributed on the Library
-  Evolution mailing list.
-All committee members may vote, but if you have not participated in the Library
-  Evolution discussions of executors, please choose to not vote.
+  more information on electronic voting procedures.
 
-The tentative timeline for these votes is as follows:
+All committee members may vote, but if you have not participated in the Library
+  Evolution discussions of a poll, please choose to not vote.
+
+### How to Vote ### {#how-to-vote}
+
+<b><a href="https://documents.isocpp.org/index.php/apps/forms/p9rmfTQTEPpopQtb">Vote here</a></b>
+
+You need a documents.isocpp.org account to vote.
+If you see "Form not found" when you go to the above link, you are not signed
+  in to documents.isocpp.org.
+A documents.isocpp.org accocunt is necessary to vote.
+Email <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a> if you
+  do not have an account.
+
+You will not receive a confirmation email after voting.
+The Library Evolution chairs will send a confirmation to all voters before the
+  close of the poll.
+
+If you need to change how you voted or have any questions or issues about
+  voting, please email
+  <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a>.
+
+### Voting Timeline ### {#voting-timeline}
 
 - 2020-10-13: Draft polls distributed by mailing list.
-- 2020-10-22 or 2020-10-23: Final discussion telecon on these polls.
+- 2020-10-22: Final discussion telecon on the polls.
     Start of the polling period.
-- 2020-11-19: Close of the polling period.
+- 2020-11-16: Chairs send a reminder to all voters of how they voted.
+- 2020-11-19: End of the polling period.
 - 2020-11-20: Chairs share results and summarize consensus and conclusions of
     the results.
 
@@ -107,12 +126,24 @@ The tentative timeline for these votes is as follows:
 
 Each poll consists of a statement; you vote on whether you support the
   statement.
-All polls will be 5-way polls; you'll vote either strongly for, weakly for,
-  neutral, weakly against, or strongly against.
+All polls will be 5-way polls; you'll vote either "strongly favor",
+  "weakly favor", "neutral", "weakly against", or "strongly against".
+If you do not want to participate in a poll, select the "I do not want to
+  participate in this poll" option.
+Those who do not participate in a poll will not be counted or recorded.
+
+Each poll has a comment field.
+Please leave a comment explaining the rationale for your vote.
+
+Poll results and comments will be shared with Library Evolution after the end of
+  the polling period, including attribution of your votes and comments.
+
+If you want to discuss the polls or how you plan on voting on them, please
+  starting an email thread on lib-ext@lists.isocpp.org
 
 ### Executor Polls ### {#executor-polls}
 
-The following C++ Library Evolution polls relate to executors ([[P0443R13]]),
+The following C++ Library Evolution polls relate to executors ([[P0443R14]]),
   a proposed set of abstractions for asynchronously creating and managing
   execution agents.
 These polls are based on the reports of the six breakout groups that reviewed
@@ -121,7 +152,8 @@ These polls are based on the reports of the six breakout groups that reviewed
 
 #### Poll 0 #### {#poll-0}
 
-Remove explicit adaptation (apply [[P2235R0]] to [[P0443R14]]):
+Remove explicit adaptation from P0443R14 (Executors) by applying [[P2235R0]] to
+  [[P0443R14]]) which will:
 - Make `schedule` only take `scheduler`s.
 - Make `execute` only take `executor`s.
 - Make sender and receiver operations like `connect` only take senders and
@@ -132,25 +164,27 @@ Remove explicit adaptation (apply [[P2235R0]] to [[P0443R14]]):
 #### Poll 1 #### {#poll-1}
 
 Use one class for each individual trait instead of combined traits classes
-  (`sender_traits`, etc).
+  (`sender_traits`, etc) in [[P0443R14]] (Executors).
 
 #### Poll 2 #### {#poll-2}
 
-Remove `static_thread_pool` from [[P0443R14]] (it may be pursued in a follow-on
-  proposal).
+Remove `static_thread_pool` from [[P0443R14]] (Executors).
+It may be pursued in a follow-on proposal.
 
 #### Poll 3 #### {#poll-3}
 
-Remove `any_executor` from [[P0443R14]] (it may be pursued in a follow-on
-  proposal).
+Remove `any_executor` from [[P0443R14]] (Executors).
+It may be pursued in a follow-on proposal.
 
 #### Poll 4 #### {#poll-4}
 
-Remove `any_executor::target` and `any_executor::target_type` from [[P0443R14]].
+Remove `any_executor::target` and `any_executor::target_type` from [[P0443R14]]
+  (Executors).
 
 #### Poll 5 #### {#poll-5}
 
-Executors are sufficiently mature that we should aim to ship them in C++23.
+[[P0443R14]] (Executors) is sufficiently mature that we should aim to ship
+  it in C++23.
 
 ### Other Polls ### {#other-polls}
 
