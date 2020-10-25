@@ -87,7 +87,7 @@ This paper contains the decision polls that the C++ Library Evolution group
 
 ## Voting ## {#voting}
 
-These decision polls will be conducted electronically; see [[P2195R0]] for
+These decision polls will be conducted electronically; see [[P2195R1]] for
   more information on electronic voting procedures.
 
 All committee members may vote, but if you have not participated in the Library
