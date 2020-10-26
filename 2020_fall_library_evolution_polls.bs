@@ -1,7 +1,7 @@
 <pre class='metadata'>
 Title: 2020 Fall Library Evolution Polls
 Shortname: D2233
-Revision: 2
+Revision: 3
 Status: D
 Group: WG21
 Audience: WG21
