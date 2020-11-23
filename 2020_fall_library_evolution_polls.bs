@@ -87,7 +87,7 @@ This paper contains the decision polls that the C++ Library Evolution group
 
 # Voting # {#voting}
 
-These decision polls will be conducted electronically; see [[P2195R0]] for
+These decision polls will be conducted electronically; see [[P2195R1]] for
   more information on electronic voting procedures.
 
 All committee members may vote, but if you have not participated in the Library
@@ -100,7 +100,7 @@ All committee members may vote, but if you have not participated in the Library
 A documents.isocpp.org account is necessary to vote.
 If you have an isocpp.org/papers account, a documents.isocpp.org account has
   been created for you.
-Just go to documents.isocpp.org and reset your password.
+Just go to documents.isocpp.org and reset your password by email.
 Email <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a> if you
   do not have an account or are having trouble accessing your account.
 
@@ -212,7 +212,7 @@ Send [[P2161R2]] (Remove Default Candidate Executor) to LWG for the Networking
 
 <pre class=biblio>
 {
-  "P2195R0": {
+  "P2195R1": {
     "authors": [
       "Bryce Adelstein Lelbach",
       "JF Bastien",
@@ -230,9 +230,9 @@ Send [[P2161R2]] (Remove Default Candidate Executor) to LWG for the Networking
       "Corentin Jabot",
       "David Stone"
     ],
-    "href": "https://wg21.link/p2195r0",
+    "href": "https://isocpp.org/files/papers/P2195R1.html",
     "title": "Electronic Straw Polls",
-    "date": "25 August 2020"
+    "date": "23 November 2020"
   },
   "P2235R0": {
     "authors": [
