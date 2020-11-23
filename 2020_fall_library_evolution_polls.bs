@@ -80,20 +80,20 @@ div.newnumbered li:before {
 }
 </style>
 
-## Introduction ## {#introduction}
+# Introduction # {#introduction}
 
 This paper contains the decision polls that the C++ Library Evolution group
   will take in Fall of 2020.
 
-## Voting ## {#voting}
+# Voting # {#voting}
 
-These decision polls will be conducted electronically; see [[P2195R1]] for
+These decision polls will be conducted electronically; see [[P2195R0]] for
   more information on electronic voting procedures.
 
 All committee members may vote, but if you have not participated in the Library
   Evolution discussions of a poll, please choose to not vote.
 
-### How to Vote ### {#how-to-vote}
+## How to Vote ## {#how-to-vote}
 
 <b><a href="https://documents.isocpp.org/index.php/apps/forms/p9rmfTQTEPpopQtb">Vote here</a></b>
 
@@ -116,7 +116,7 @@ If you need to change how you voted or have any questions or issues about
   voting, please email
   <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a>.
 
-### Voting Timeline ### {#voting-timeline}
+## Voting Timeline ## {#voting-timeline}
 
 - 2020-10-13: Draft polls distributed by mailing list.
 - 2020-10-22: Final discussion telecon on the polls.
@@ -126,7 +126,7 @@ If you need to change how you voted or have any questions or issues about
 - 2020-11-20: Chairs share results and summarize consensus and conclusions of
     the results.
 
-## Polls ## {#poll}
+# Polls # {#poll}
 
 Each poll consists of a statement; you vote on whether you support the
   statement.
@@ -146,7 +146,7 @@ If you want to discuss the polls or how you plan on voting, please start an
   email thread on the
   <a href="lib-ext@lists.isocpp.org">Library Evolution mailing list</a>.
 
-### Executor Polls ### {#executor-polls}
+## Executor Polls ## {#executor-polls}
 
 The following C++ Library Evolution polls relate to executors ([[P0443R14]]),
   a proposed set of abstractions for asynchronously creating and managing
@@ -155,7 +155,7 @@ These polls are based on the reports of the six breakout groups that reviewed
   various aspects of the executors proposal in the Summer of 2020
   ([[P2202R0]], [[P2203R0]], [[P2183R0]], [[P2205R0]], [[P2206R0]], and [[P2207R0]]).
 
-#### Poll 0 #### {#poll-0}
+### Poll 0 ### {#poll-0}
 
 Remove implicit adaptation from [[P0443R14]] (Executors) by applying
   [[P2235R0]] to [[P0443R14]]) which will:
@@ -166,52 +166,74 @@ Remove implicit adaptation from [[P0443R14]] (Executors) by applying
 - Add explicit adaptation from `executor` to `scheduler`
     (`make_scheduler_from_executor`) but not vice versa.
 
-#### Poll 1 #### {#poll-1}
+### Poll 1 ### {#poll-1}
 
 Use one class for each individual trait instead of combined traits classes
   (`sender_traits`, etc) in [[P0443R14]] (Executors).
 
-#### Poll 2 #### {#poll-2}
+### Poll 2 ### {#poll-2}
 
 Remove `static_thread_pool` from [[P0443R14]] (Executors).
 It may be pursued in a follow-on proposal.
 
-#### Poll 3 #### {#poll-3}
+### Poll 3 ### {#poll-3}
 
 Remove `any_executor` from [[P0443R14]] (Executors).
 It may be pursued in a follow-on proposal.
 
-#### Poll 4 #### {#poll-4}
+### Poll 4 ### {#poll-4}
 
 Remove `any_executor::target` and `any_executor::target_type` from [[P0443R14]]
   (Executors).
 
-#### Poll 5 #### {#poll-5}
+### Poll 5 ### {#poll-5}
 
 [[P0443R14]] (Executors) is sufficiently mature that we should aim to ship
   it in C++23.
 
-### Other Polls ### {#other-polls}
+## Other Polls ## {#other-polls}
 
-#### Poll 6 #### {#poll-6}
+### Poll 6 ### {#poll-6}
 
 Send [[P2212R1]] (Relax Requirements for `time_point::clock`) to LWG for C++23,
   classified as an improvement of an existing feature ([[P0592R4]] bucket
   2 item).
 
-#### Poll 7 #### {#poll-7}
+### Poll 7 ### {#poll-7}
 
 Send [[P2166R1]] (Prohibit `basic_string` and `basic_string_view` Construction
   from `nullptr`) to LWG for C++23, classified as an improvement of an
   existing feature ([[P0592R4]] bucket 2 item).
 
-#### Poll 8 #### {#poll-8}
+### Poll 8 ### {#poll-8}
 
 Send [[P2161R2]] (Remove Default Candidate Executor) to LWG for the Networking
   TS Working Draft, classified as a focus work item ([[P0592R4]] bucket 1 item).
 
 <pre class=biblio>
 {
+  "P2195R0": {
+    "authors": [
+      "Bryce Adelstein Lelbach",
+      "JF Bastien",
+      "Hal Finkel",
+      "Fabio Fracassi",
+      "Ben Craig",
+      "Billy Baker",
+      "Nevin Liber",
+      "Titus Winters",
+      "Jeffrey Yasskin",
+      "Ville Voutilainen",
+      "Tom Honermann",
+      "Inbal Levi",
+      "Antony Polukhin",
+      "Corentin Jabot",
+      "David Stone"
+    ],
+    "href": "https://wg21.link/p2195r0",
+    "title": "Electronic Straw Polls",
+    "date": "25 August 2020"
+  },
   "P2235R0": {
     "authors": [
       "Ville Voutilainen"
